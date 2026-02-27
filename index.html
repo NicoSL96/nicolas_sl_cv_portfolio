@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicolás Sebastián Ledezma | Portfolio CV</title>
+<style>
+body { font-family: Arial, sans-serif; margin:0; background:#f4f6f8; color:#333;}
+header { background:#1f2937; color:white; padding:40px 20px; text-align:center;}
+header h1 { margin:0; }
+.container { max-width:1000px; margin:auto; padding:20px;}
+.card { background:white; padding:20px; margin-bottom:20px; border-radius:10px; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+h2 { border-bottom:2px solid #eee; padding-bottom:5px;}
+ul { padding-left:20px;}
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+.btn {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+.btn:hover { background:#1d4ed8; }
+
+@media(max-width:768px){
+.grid { grid-template-columns:1fr; }
+}
+
+/* PRINT STYLE FOR PDF */
+@media print {
+.btn { display:none; }
+body { background:white; }
+.card { box-shadow:none; border:1px solid #ddd; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Nicolás Alejandro Sebastián Ledezma</h1>
+<p>Data Engineer | BI Consultant</p>
+<p>Buenos Aires, Argentina | nicolas.sebastianledezma@gmail.com</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Sobre mí</h2>
+<p>Estudiante de Ingeniería Informática con amplia experiencia en Data Engineering utilizando tecnologías legacy y cloud.
+Apasionado por aprender continuamente y trabajar en equipo. Mi lema: “Lo que no se sabe, se aprende”.</p>
+</div>
+
+<div class="grid">
+<div class="card">
+<h2>Idiomas</h2>
+<ul>
+<li>Español (nativo)</li>
+<li>Inglés (intermedio)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Educación</h2>
+<ul>
+<li>Ingeniería en Informática – UNLaM (2014 - Actualidad)</li>
+<li>Bachiller en Ciencias Sociales – Instituto Almirante Brown</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<h2>Experiencia Profesional</h2>
+
+<h3>Accenture – Ingeniero de Datos (2022 - Actualidad)</h3>
+<ul>
+<li>Flujos de datos en Apache NiFi.</li>
+<li>Procesos Python orquestados con Airflow en GCP.</li>
+<li>BigQuery y SQL Server.</li>
+</ul>
+
+<h3>Datalytics – Ingeniero de Datos (2021 - 2022)</h3>
+<ul>
+<li>ETL con SSIS y AWS Glue.</li>
+<li>SQL Server, Teradata, BigQuery y Athena.</li>
+<li>Almacenamiento en AWS S3.</li>
+</ul>
+
+<h3>COREBI – Consultor BI (2019 - 2021)</h3>
+<ul>
+<li>Azure Data Factory y SSIS.</li>
+<li>PowerBI y APIs REST.</li>
+</ul>
+
+<h3>IT4W – Consultor BI (2017 - 2019)</h3>
+<ul>
+<li>ETL con SSIS y Pentaho.</li>
+<li>MicroStrategy y SQL multi‑motor.</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>Aptitudes</h2>
+<ul>
+<li>Cloud: GCP, Azure, AWS</li>
+<li>Bases de datos: SQL Server, Teradata, MySQL, BigQuery, Athena</li>
+<li>ETL: SSIS, Pentaho, Azure Data Factory, AWS Glue, NiFi, Airflow</li>
+<li>Visualización: PowerBI, MicroStrategy</li>
+</ul>
+</div>
+
+</div>
+
+<button class="btn" onclick="window.print()">Descargar como PDF</button>
+
+</body>
+</html>
