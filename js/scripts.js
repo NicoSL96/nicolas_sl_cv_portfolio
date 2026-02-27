@@ -1,20 +1,3 @@
-// ==================== DOM Elements ==================== 
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-link');
-const contactForm = document.getElementById('contactForm');
-
-// ==================== Hamburger Menu ==================== 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
-
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-    });
-});
-
 // ==================== Placeholder Images ==================== 
 function createPlaceholder(width, height, text = 'Imagen') {
     const canvas = document.createElement('canvas');
@@ -83,34 +66,6 @@ document.querySelectorAll('.skill-progress').forEach(element => {
     observer.observe(element);
 });
 
-// ==================== Contact Form ==================== 
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Get form data
-    const formData = new FormData(this);
-    
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    
-    submitBtn.textContent = 'Enviando...';
-    submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        submitBtn.textContent = '¡Mensaje Enviado!';
-        submitBtn.style.backgroundColor = '#10b981';
-        
-        this.reset();
-        
-        setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            submitBtn.style.backgroundColor = '';
-        }, 3000);
-    }, 1500);
-});
-
 // ==================== Active Navigation Link ==================== 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -121,13 +76,6 @@ window.addEventListener('scroll', () => {
         
         if (pageYOffset >= sectionTop - 200) {
             current = section.getAttribute('id');
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
         }
     });
 });
@@ -150,13 +98,6 @@ fadeElements.forEach(element => {
     element.style.transform = 'translateY(20px)';
     element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     fadeObserver.observe(element);
-});
-
-// ==================== Navigation Highlight ==================== 
-navLinks.forEach(link => {
-    if (link.getAttribute('href').slice(1) === '') {
-        link.classList.add('active');
-    }
 });
 
 // Agregar estilos CSS para el link activo

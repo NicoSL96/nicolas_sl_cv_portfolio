@@ -1,5 +1,7 @@
 # CV Portfolio - Nicolas Sebastian Ledezma
 
+puras webadas abajo
+
 Página web profesional basada en el CV de Nicolas Sebastian Ledezma, desarrollada con HTML5, CSS3 y JavaScript vanilla.
 
 ## 📋 Características
