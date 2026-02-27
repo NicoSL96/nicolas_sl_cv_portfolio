@@ -8,36 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">Nicolas S. Ledezma</div>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">Acerca de</a></li>
-                <li><a href="#experience" class="nav-link">Experiencia</a></li>
-                <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                <li><a href="#projects" class="nav-link">Proyectos</a></li>
-                <li><a href="#contact" class="nav-link">Contacto</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
+   
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="main" class="hero">
         <div class="container">
             <div class="hero-content">
-                <img src="images/profile-photo.jpg" alt="Nicolas Sebastian Ledezma" class="profile-photo" data-placeholder="200">
-                <h1>Nicolas Sebastian Ledezma</h1>
-                <p class="subtitle">Profesional en Desarrollo y Gestión Empresarial</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Contactame</a>
-                    <a href="#projects" class="btn btn-secondary">Ver Proyectos</a>
-                </div>
+                <img src="images/profile_photo.jpg" alt="Nicolas Sebastian Ledezma" class="profile-photo" data-placeholder="200">
+                <h1>Nicolas Alejandro Sebastian Ledezma</h1>
             </div>
         </div>
     </section>
@@ -45,32 +22,39 @@
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="section-title">Acerca de Mí</h2>
+            <h2 class="section-title">Sobre Mí</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy un profesional versátil con experiencia en desarrollo de software, gestión de proyectos y análisis empresarial. Mi objetivo es aplicar mis habilidades técnicas y de liderazgo para contribuir al éxito organizacional.</p>
-                    <p>Con formación en informática y gestión empresarial, combino conocimientos técnicos sólidos con competencias administrativas y de comunicación efectiva.</p>
+                    <p>Soy un estudiante de Ing. informática, entusiasta de la programación. Cuento con amplia experiencia en el área de Data Engineering con uso de múltiples tecnologías, tanto legacy como cloud.</p>
+                    <p>Constantemente en búsqueda de nuevos conocimientos y experiencias enriquecedoras. Siempre dispuesto a trabajar en equipo. Mi lema es: “Lo que no se sabe, se aprende”</p>
                 </div>
                 <div class="about-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Ubicación</h4>
-                            <p>Argentina</p>
+                            <p>Buenos Aires - Argentina</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>nicolas@example.com</p>
+                            <p>nicolas.sebastianledezma@gmail.com</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Teléfono</h4>
-                            <p>+54 (11) 0000-0000</p>
+                            <p>+54 (11) 3116-9185</p>
+                        </div>
+                    </div>
+                        <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>nicolas-sebastianledezma</p>
                         </div>
                     </div>
                 </div>
@@ -83,16 +67,22 @@
         <div class="container">
             <h2 class="section-title">Experiencia Laboral</h2>
             <div class="timeline">
+
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Desarrollador Full Stack</h3>
-                        <p class="company">Empresa Tecnológica XYZ</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Enero 2022 - Presente</p>
+                        <h3>Ingeniero de datos</h3>
+                        <p class="company">Accenture</p>
+                        <p class="date"><i class="fas fa-calendar"></i> Septiembre 2022 - Presente</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Parque Patricios - CABA</p>
                         <ul>
-                            <li>Desarrollo de aplicaciones web responsivas</li>
-                            <li>Implementación de bases de datos</li>
-                            <li>Gestión de proyectos con metodologías ágiles</li>
+                            <li>Creación y automatización de flujos de datos en NiFi. Integración con múltiples orígenes</li>
+                            <li>Creación y mantenimiento de objetos de bases de datos (tablas, stored procedures, etc) en SQL Server</li>
+                            <li>Creación y mantenimiento de procesos de datos en Python, orquestados vía Airflow en GCP</li>
+                            <li>Almacenamiento de datos en la nube de CGP (BigQuery)</li>
+                            <li>Gestión y relevamiento de necesidades con el negocio</li>
+                            <li>Análisis y documentación de procesos</li>
+                            <li>Trabajo bajo metodologías ágiles</li>
                         </ul>
                     </div>
                 </div>
@@ -100,13 +90,16 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Analista de Sistemas</h3>
-                        <p class="company">Consultora Empresarial ABC</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Junio 2019 - Diciembre 2021</p>
+                        <h3>Ingeniero de datos</h3>
+                        <p class="company">Datalytics</p>
+                        <p class="date"><i class="fas fa-calendar"></i> Abril 2021 - Agosto 2022</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Microcentro - CABA</p>
                         <ul>
-                            <li>Análisis de requerimientos empresariales</li>
-                            <li>Diseño de soluciones tecnológicas</li>
-                            <li>Soporte técnico a usuarios</li>
+                            <li>Creación y automatización de procesos ETL en SSIS, Data Flow (herramienta propia de ML) y AWS Glue vía Git</li>
+                            <li>Creación y mantenimiento de objetos de bases de datos (tablas, stored procedures, etc) en SQL Server, Teradata, BigQuery y AWS Athena</li>
+                            <li>Análisis y documentación de procesos</li>
+                            <li>Almacenamiento de datos en la nube de AWS vía S3</li>
+                            <li>Trabajo bajo metodologías ágiles</li>
                         </ul>
                     </div>
                 </div>
@@ -114,16 +107,38 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Practicante en Desarrollo</h3>
-                        <p class="company">Startup Innovadora</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Marzo 2018 - Mayo 2019</p>
+                        <h3>Consultor BI</h3>
+                        <p class="company">COREBI Data & Analytics</p>
+                        <p class="date"><i class="fas fa-calendar"></i> Julio 2019 - Marzo 2021</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Microcentro - CABA</p>
                         <ul>
-                            <li>Desarrollo frontend con React</li>
-                            <li>Testing y control de calidad</li>
-                            <li>Documentación técnica</li>
+                            <li>Creación de procesos ETL en SSIS y Azure Data Factory</li>
+                            <li>Modificación y actualización de reportes en PowerBI</li>
+                            <li>Creación y modificación de procesos de carga en Azure Data Factory en conjunto con herramientas de Azure (Power Apps, Logic Apps, Power Automate, etc.)</li>
+                            <li>Creación y mantenimiento de modelos tabulares en SQL Server Analisys Services</li>
+                            <li>Uso de APIs REST para la obtención de datos</li>
+                            <li>Trabajo bajo metodologías ágiles</li>
                         </ul>
                     </div>
                 </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Consultor BI</h3>
+                        <p class="company">IT4W</p>
+                        <p class="date"><i class="fas fa-calendar"></i> Febrero 2017 - Junio 2019</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Ramos Mejía - Buenos Aires</p>
+                        <ul>
+                            <li>Creación y mantenimiento de ETLs en SSIS y Pentaho</li>
+                            <li>Creación y mantenimiento de tablas, SPs y objetos de BBDD en SQL Server</li>
+                            <li>Confección de reportes, tableros y objetos de equema en Microstrategy</li>
+                            <li>Consulta de datos y uso de querys en T-SQL, Oracle SQL, Postgre SQL, Informix SQL</li>
+                            <li>Automatizado de procesos de carga y actualización de datos (ETLs, SPs, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -133,163 +148,67 @@
         <div class="container">
             <h2 class="section-title">Habilidades</h2>
             <div class="skills-grid">
+
                 <div class="skill-category">
-                    <h3>Frontend</h3>
+                    <h3><i class="fa-solid fa-cloud"></i> Plataformas Cloud</h3>
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span>HTML/CSS</span>
-                            <span class="percentage">90%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>JavaScript</span>
-                            <span class="percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>React</span>
-                            <span class="percentage">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
+                            <ul>
+                                <li>GCP</li>
+                                <li>Azure</li>
+                                <li>AWS</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Backend</h3>
+                    <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span>Node.js</span>
-                            <span class="percentage">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Bases de Datos</span>
-                            <span class="percentage">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Python</span>
-                            <span class="percentage">70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
+                            <ul>
+                                <li>SQL Server</li>
+                                <li>Teradata</li>
+                                <li>Informix</li>
+                                <li>MySQL</li>
+                                <li>Azure SQL Server</li>
+                                <li>BigQuery</li>
+                                <li>AWS Athena</li>
+                                <li>PostgreSQL</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="skill-category">
-                    <h3>Herramientas</h3>
+                    <h3><i class="fa-solid fa-gears"></i> Herramientas ETL</h3>
                     <div class="skill-item">
                         <div class="skill-header">
-                            <span>Git/GitHub</span>
-                            <span class="percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Docker</span>
-                            <span class="percentage">70%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Agile/Scrum</span>
-                            <span class="percentage">80%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project-1.jpg" alt="Proyecto 1" data-placeholder="300">
-                    </div>
-                    <div class="project-content">
-                        <h3>Plataforma de E-commerce</h3>
-                        <p>Aplicación web completa de comercio electrónico con carrito de compras, procesamiento de pagos y panel administrativo.</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
-                            <a href="#" class="link"><i class="fab fa-github"></i> Código</a>
+                            <ul>
+                                <li>SSIS</li>
+                                <li>Pentaho</li>
+                                <li>Azure Data Factory</li>
+                                <li>AWS Glue</li>
+                                <li>Google DataFlow</li>
+                                <li>Apache NiFi</li>
+                                <li>Apache Airflow</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project-2.jpg" alt="Proyecto 2" data-placeholder="300">
-                    </div>
-                    <div class="project-content">
-                        <h3>Sistema de Gestión de Tareas</h3>
-                        <p>Aplicación colaborativa para gestión de proyectos con seguimiento en tiempo real y notificaciones.</p>
-                        <div class="project-tags">
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">CSS3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
-                            <a href="#" class="link"><i class="fab fa-github"></i> Código</a>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-chart-column"></i> Herramientas visualización</h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <ul>
+                                <li>MicroStrategy</li>
+                                <li>PowerBI</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="images/project-3.jpg" alt="Proyecto 3" data-placeholder="300">
-                    </div>
-                    <div class="project-content">
-                        <h3>Análisis de Datos Dashboard</h3>
-                        <p>Dashboard interactivo para visualización y análisis de datos empresariales en tiempo real.</p>
-                        <div class="project-tags">
-                            <span class="tag">D3.js</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="link"><i class="fas fa-external-link-alt"></i> Ver Proyecto</a>
-                            <a href="#" class="link"><i class="fab fa-github"></i> Código</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -299,92 +218,25 @@
         <div class="container">
             <h2 class="section-title">Educación</h2>
             <div class="education-grid">
+                
                 <div class="education-card">
                     <div class="education-header">
-                        <h3>Licenciatura en Informática</h3>
-                        <p class="institution">Universidad Nacional</p>
+                        <h3>Ingeniería en Informática - en curso</h3>
+                        <p class="institution">Universidad Nacional de La Matanza</p>
                     </div>
-                    <p class="date"><i class="fas fa-calendar"></i> 2015 - 2020</p>
-                    <p class="description">Formación en desarrollo de software, bases de datos y sistemas operativos.</p>
-                </div>
-
-                <div class="education-card">
-                    <div class="education-header">
-                        <h3>Licenciatura en Administración de Empresas</h3>
-                        <p class="institution">Universidad Empresarial</p>
-                    </div>
-                    <p class="date"><i class="fas fa-calendar"></i> 2018 - 2023</p>
-                    <p class="description">Especialización en gestión empresarial, finanzas y liderazgo organizacional.</p>
+                    <p class="date"><i class="fas fa-calendar"></i> 2014 - Presente</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> San Justo - Buenos Aires </p>
                 </div>
 
                 <div class="education-card">
                     <div class="education-header">
-                        <h3>Certificaciones Profesionales</h3>
-                        <p class="institution">Plataformas Online</p>
+                        <h3>Bachiller en ciencias sociales</h3>
+                        <p class="institution">Instituto Almirante Brown</p>
                     </div>
-                    <p class="date"><i class="fas fa-calendar"></i> 2021 - 2024</p>
-                    <ul class="certification-list">
-                        <li>AWS Cloud Practitioner</li>
-                        <li>Google Cloud Associate</li>
-                        <li>Scrum Master Certified</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:nicolas@example.com">nicolas@example.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <a href="tel:+5411000000">+54 (11) 0000-0000</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Ubicación</h4>
-                            <p>Buenos Aires, Argentina</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-link"></i>
-                        <div>
-                            <h4>Enlaces</h4>
-                            <div class="social-links">
-                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="date"><i class="fas fa-calendar"></i> 2008 - 2013</p>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Ituzaingo - Buenos Aires </p>
                 </div>
 
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Tu email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
             </div>
         </div>
     </section>
@@ -392,11 +244,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Nicolas Sebastian Ledezma. Todos los derechos reservados.</p>
+            <p>&copy; 2026 CV Nicolas Sebastian Ledezma. Hosteado en <b>Github Pages</b>.</p>
             <div class="footer-links">
-                <a href="#about">Acerca de</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#contact">Contacto</a>
+                <a href="#main"><b>Volver arriba</b></a>
             </div>
         </div>
     </footer>
