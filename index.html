@@ -8,10 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <script src="js/script.js"></script>
-   
+
     <!-- Hero Section -->
     <section id="main" class="hero">
+        <label class="switch">
+            <input type="checkbox" id="lang_btn">
+            <span class="slider"><b>EN  ES</b></span>
+        </label>
         <div class="container">
             <div class="hero-content">
                 <img src="images/profile_photo.jpg" alt="Nicolas Sebastian Ledezma" class="profile-photo" data-placeholder="200">
@@ -23,40 +26,33 @@
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
+            <h2 id="about_title" class="section-title"></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Soy un estudiante de Ing. informática, entusiasta de la programación. Cuento con amplia experiencia en el área de Data Engineering con uso de múltiples tecnologías, tanto legacy como cloud.</p>
-                    <p>Constantemente en búsqueda de nuevos conocimientos y experiencias enriquecedoras. Siempre dispuesto a trabajar en equipo. Mi lema es: “Lo que no se sabe, se aprende”</p>
+                    <p id="about_text_1"></p>
+                    <p id="about_text_2"></p>
                 </div>
                 <div class="about-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Ubicación</h4>
+                            <h4 id="about_location"></h4>
                             <p>Buenos Aires - Argentina</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
+                            <h4 id="about_email"></h4>
                             <p>nicolas.sebastianledezma@gmail.com</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+54 (11) 3116-9185</p>
-                        </div>
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h4 id="about_li"></h4>
+                        <p>nicolas-sebastianledezma</p>
                     </div>
-                        <div class="info-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <p>nicolas-sebastianledezma</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -66,24 +62,30 @@
     <!-- Experience Section -->
     <section id="experience" class="experience section">
         <div class="container">
-            <h2 class="section-title">Experiencia Laboral</h2>
+            <h2 class="section-title" id="experience_title"></h2>
             <div class="timeline">
 
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Ingeniero de datos</h3>
-                        <p class="company">Accenture</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Septiembre 2022 - Presente</p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Parque Patricios - CABA</p>
+                        <h3 id="experience_item_title_4"></h3>
+                        <p class="company" id="experience_item_company_4"></p>
+                        <div class="date">
+                            <i class="fas fa-calendar"></i>
+                            <p id="experience_item_date_4"></p>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p id="experience_item_location_4"></p>
+                        </div>
                         <ul>
-                            <li>Creación y automatización de flujos de datos en NiFi. Integración con múltiples orígenes</li>
-                            <li>Creación y mantenimiento de objetos de bases de datos (tablas, stored procedures, etc) en SQL Server</li>
-                            <li>Creación y mantenimiento de procesos de datos en Python, orquestados vía Airflow en GCP</li>
-                            <li>Almacenamiento de datos en la nube de CGP (BigQuery)</li>
-                            <li>Gestión y relevamiento de necesidades con el negocio</li>
-                            <li>Análisis y documentación de procesos</li>
-                            <li>Trabajo bajo metodologías ágiles</li>
+                            <li id="experience_item_desc_4_1"></li>
+                            <li id="experience_item_desc_4_2"></li>
+                            <li id="experience_item_desc_4_3"></li>
+                            <li id="experience_item_desc_4_4"></li>
+                            <li id="experience_item_desc_4_5"></li>
+                            <li id="experience_item_desc_4_6"></li>
+                            <li id="experience_item_desc_4_7"></li>
                         </ul>
                     </div>
                 </div>
@@ -91,16 +93,22 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Ingeniero de datos</h3>
-                        <p class="company">Datalytics</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Abril 2021 - Agosto 2022</p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Microcentro - CABA</p>
+                        <h3 id="experience_item_title_3"></h3>
+                        <p class="company" id="experience_item_company_3"></p>
+                        <div class="date">
+                            <i class="fas fa-calendar"></i>
+                            <p id="experience_item_date_3"></p>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p id="experience_item_location_3"></p>
+                        </div>
                         <ul>
-                            <li>Creación y automatización de procesos ETL en SSIS, Data Flow (herramienta propia de ML) y AWS Glue vía Git</li>
-                            <li>Creación y mantenimiento de objetos de bases de datos (tablas, stored procedures, etc) en SQL Server, Teradata, BigQuery y AWS Athena</li>
-                            <li>Análisis y documentación de procesos</li>
-                            <li>Almacenamiento de datos en la nube de AWS vía S3</li>
-                            <li>Trabajo bajo metodologías ágiles</li>
+                            <li id="experience_item_desc_3_1"></li>
+                            <li id="experience_item_desc_3_2"></li>
+                            <li id="experience_item_desc_3_3"></li>
+                            <li id="experience_item_desc_3_4"></li>
+                            <li id="experience_item_desc_3_5"></li>
                         </ul>
                     </div>
                 </div>
@@ -108,17 +116,23 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Consultor BI</h3>
-                        <p class="company">COREBI Data & Analytics</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Julio 2019 - Marzo 2021</p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Microcentro - CABA</p>
+                        <h3 id="experience_item_title_2"></h3>
+                        <p class="company" id="experience_item_company_2"></p>
+                        <div class="date">
+                            <i class="fas fa-calendar"></i>
+                            <p id="experience_item_date_2"></p>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p id="experience_item_location_2"></p>
+                        </div>
                         <ul>
-                            <li>Creación de procesos ETL en SSIS y Azure Data Factory</li>
-                            <li>Modificación y actualización de reportes en PowerBI</li>
-                            <li>Creación y modificación de procesos de carga en Azure Data Factory en conjunto con herramientas de Azure (Power Apps, Logic Apps, Power Automate, etc.)</li>
-                            <li>Creación y mantenimiento de modelos tabulares en SQL Server Analisys Services</li>
-                            <li>Uso de APIs REST para la obtención de datos</li>
-                            <li>Trabajo bajo metodologías ágiles</li>
+                            <li id="experience_item_desc_2_1"></li>
+                            <li id="experience_item_desc_2_2"></li>
+                            <li id="experience_item_desc_2_3"></li>
+                            <li id="experience_item_desc_2_4"></li>
+                            <li id="experience_item_desc_2_5"></li>
+                            <li id="experience_item_desc_2_6"></li>
                         </ul>
                     </div>
                 </div>
@@ -126,16 +140,22 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Consultor BI</h3>
-                        <p class="company">IT4W</p>
-                        <p class="date"><i class="fas fa-calendar"></i> Febrero 2017 - Junio 2019</p>
-                        <p class="location"><i class="fas fa-map-marker-alt"></i> Ramos Mejía - Buenos Aires</p>
+                        <h3 id="experience_item_title_1"></h3>
+                        <p class="company" id="experience_item_company_1"></p>
+                        <div class="date">
+                            <i class="fas fa-calendar"></i>
+                            <p id="experience_item_date_1"></p>
+                        </div>
+                        <div class="location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p id="experience_item_location_1"></p>
+                        </div>
                         <ul>
-                            <li>Creación y mantenimiento de ETLs en SSIS y Pentaho</li>
-                            <li>Creación y mantenimiento de tablas, SPs y objetos de BBDD en SQL Server</li>
-                            <li>Confección de reportes, tableros y objetos de equema en Microstrategy</li>
-                            <li>Consulta de datos y uso de querys en T-SQL, Oracle SQL, Postgre SQL, Informix SQL</li>
-                            <li>Automatizado de procesos de carga y actualización de datos (ETLs, SPs, etc.)</li>
+                            <li id="experience_item_desc_1_1"></li>
+                            <li id="experience_item_desc_1_2"></li>
+                            <li id="experience_item_desc_1_3"></li>
+                            <li id="experience_item_desc_1_4"></li>
+                            <li id="experience_item_desc_1_5"></li>
                         </ul>
                     </div>
                 </div>
@@ -147,11 +167,14 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section">
         <div class="container">
-            <h2 class="section-title">Habilidades</h2>
+            <h2 class="section-title" id="skills_title"></h2>
             <div class="skills-grid">
 
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-cloud"></i> Plataformas Cloud</h3>
+                    <h3>
+                        <i class="fa-solid fa-cloud"></i>
+                        <p id="skills_subtitle_1"></p>
+                    </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
@@ -164,7 +187,10 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-database"></i> Bases de datos</h3>
+                    <h3>
+                        <i class="fa-solid fa-database"></i> 
+                        <p id="skills_subtitle_2"></p>
+                    </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
@@ -182,7 +208,10 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-gears"></i> Herramientas ETL</h3>
+                    <h3>
+                        <i class="fa-solid fa-gears"></i>
+                        <p id="skills_subtitle_3"></p>
+                    </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
@@ -199,12 +228,30 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fa-solid fa-chart-column"></i> Herramientas visualización</h3>
+                    <h3>
+                        <i class="fa-solid fa-chart-column"></i>
+                        <p id="skills_subtitle_4"></p>
+                    </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
                                 <li>MicroStrategy</li>
                                 <li>PowerBI</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <i class="fa-solid fa-code"></i>
+                        <p id="skills_subtitle_5"></p>
+                    </h3>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <ul>
+                                <li>SQL</li>
+                                <li>Python</li>
                             </ul>
                         </div>
                     </div>
@@ -217,25 +264,32 @@
     <!-- Education Section -->
     <section class="education section">
         <div class="container">
-            <h2 class="section-title">Educación</h2>
+            <h2 class="section-title" id="education_title"></h2>
             <div class="education-grid">
                 
                 <div class="education-card">
                     <div class="education-header">
-                        <h3>Ingeniería en Informática - en curso</h3>
-                        <p class="institution">Universidad Nacional de La Matanza</p>
+                        <h3 id="education_h3_1"></h3>
+                        <p class="institution" id="education_institution_1"></p>
                     </div>
-                    <p class="date"><i class="fas fa-calendar"></i> 2014 - Presente</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> San Justo - Buenos Aires </p>
+                    <div class="date">
+                        <i class="fas fa-calendar"></i>
+                        <p id="education_date_1"></p>
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p id="education_location_1"></p>
+                    </div>
                 </div>
 
                 <div class="education-card">
                     <div class="education-header">
-                        <h3>Bachiller en ciencias sociales</h3>
-                        <p class="institution">Instituto Almirante Brown</p>
+                        <h3 id="education_h3_2"></h3>
                     </div>
-                    <p class="date"><i class="fas fa-calendar"></i> 2008 - 2013</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Ituzaingo - Buenos Aires </p>
+                    <ul class="certification-list">
+                        <li id="education_item_2_1"></li>
+                        <li id="education_item_2_2"></li>
+                    </ul>
                 </div>
 
             </div>
@@ -245,12 +299,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 CV Nicolas Sebastian Ledezma. Hosteado en <b>Github Pages</b>.</p>
+            <div class="footer-desc">
+                <p id="footer_text"></p>
+            </div>
             <div class="footer-links">
-                <a href="#main"><b>Volver arriba</b></a>
+                <a href="#main">
+                    <b id="footer_button"></b>
+                </a>
             </div>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,79 @@
+{
+	"about-title": "Sobre Mí",
+	
+    "about-text-1": "Soy un estudiante de Ing. informática, entusiasta de la programación. Cuento con amplia experiencia en el área de Data Engineering con uso de múltiples tecnologías, tanto legacy como cloud.",
+    "about-text-2": "Constantemente en búsqueda de nuevos conocimientos y experiencias enriquecedoras. Siempre dispuesto a trabajar en equipo. Mi lema es: “Lo que no se sabe, se aprende”.",
+    "about-location": "Ubicación",
+    "about-email": "Email",
+	"about-li": "LinkedIn",
+	
+	
+	"experience-title": "Experiencia Laboral",
+    
+	"experience-item-title-1": "Consultor BI",
+    "experience-item-company-1": "IT4W",
+    "experience-item-date-1": "Febrero 2017 - Junio 2019",
+    "experience-item-location-1": "Ramos Mejía - Buenos Aires",
+    "experience-item-desc-1-1": "Creación y mantenimiento de ETLs en SSIS y Pentaho",
+    "experience-item-desc-1-2": "Creación y mantenimiento de tablas, SPs y objetos de BBDD en SQL Server",
+    "experience-item-desc-1-3": "Confección de reportes, tableros y objetos de equema en Microstrategy",
+    "experience-item-desc-1-4": "Consulta de datos y uso de querys en T-SQL, Oracle SQL, Postgre SQL, Informix SQL",
+    "experience-item-desc-1-5": "Automatizado de procesos de carga y actualización de datos (ETLs, SPs, etc.)",
+    
+	"experience-item-title-2": "Consultor BI",
+    "experience-item-company-2": "COREBI Data & Analytics",
+    "experience-item-date-2": "Julio 2019 - Marzo 2021",
+    "experience-item-location-2": "Microcentro - CABA",
+    "experience-item-desc-2-1": "Creación de procesos ETL en SSIS y Azure Data Factory",
+    "experience-item-desc-2-2": "Modificación y actualización de reportes en PowerBI",
+    "experience-item-desc-2-3": "Creación y modificación de procesos de carga en Azure Data Factory en conjunto con herramientas de Azure (Power Apps, Logic Apps, Power Automate, etc.)",
+    "experience-item-desc-2-4": "Creación y mantenimiento de modelos tabulares en SQL Server Analisys Services",
+    "experience-item-desc-2-5": "Uso de APIs REST para la obtención de datos",
+	"experience-item-desc-2-6": "Trabajo bajo metodologías ágiles",
+
+	"experience-item-title-3": "Ingeniero de datos",
+    "experience-item-company-3": "Datalytics",
+    "experience-item-date-3": "Abril 2021 - Agosto 2022",
+    "experience-item-location-3": "Microcentro - CABA",
+    "experience-item-desc-3-1": "Creación y automatización de procesos ETL en SSIS, Data Flow (herramienta propia de ML) y AWS Glue vía Git",
+    "experience-item-desc-3-2": "Creación y mantenimiento de objetos de bases de datos (tablas, stored procedures, etc) en SQL Server, Teradata, BigQuery y AWS Athena",
+    "experience-item-desc-3-3": "Análisis y documentación de procesos",
+    "experience-item-desc-3-4": "Almacenamiento de datos en la nube de AWS vía S3",
+    "experience-item-desc-3-5": "Trabajo bajo metodologías ágiles",
+
+	"experience-item-title-4": "Ingeniero de datos",
+    "experience-item-company-4": "Accenture",
+    "experience-item-date-4": "Septiembre 2022 - Presente",
+    "experience-item-location-4": "Parque Patricios - CABA",
+    "experience-item-desc-4-1": "Creación y automatización de flujos de datos en NiFi. Integración con múltiples orígenes",
+    "experience-item-desc-4-2": "Creación y mantenimiento de objetos de bases de datos (tablas, stored procedures, etc) en SQL Server",
+    "experience-item-desc-4-3": "Creación y mantenimiento de procesos de datos en Python, orquestados vía Airflow en GCP",
+    "experience-item-desc-4-4": "Almacenamiento de datos en la nube de GCP (BigQuery)",
+    "experience-item-desc-4-5": "Gestión y relevamiento de necesidades con el negocio",
+	"experience-item-desc-4-6": "Análisis y documentación de procesos",
+	"experience-item-desc-4-7": "Trabajo bajo metodologías ágiles",
+
+
+	"skills-title": "Habilidades",
+	
+	"skills-subtitle-1": "Plataformas Cloud",
+    "skills-subtitle-2": "Bases de datos",
+    "skills-subtitle-3": "Herramientas ETL",
+    "skills-subtitle-4": "Herramientas visualización",
+    "skills-subtitle-5": "Lenguajes programación",
+    
+	
+    "education-title": "Educación",
+	
+    "education-h3-1": "Ingeniería en Informática",
+    "education-institution-1": "Universidad Nacional de La Matanza",
+    "education-date-1": "2014 - Presente",
+    "education-location-1": "San Justo - Buenos Aires",
+
+	"education-h3-2": "Idiomas",
+    "education-item-2-1": "Inglés (intermedio)",
+    "education-item-2-2": "Español (nativo)",
+
+    "footer-text": "&copy; 2026 CV Nicolas Sebastian Ledezma. Hosteado en ",
+    "footer-button": "Volver arriba"
+}
