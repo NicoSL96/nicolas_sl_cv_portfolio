@@ -8,17 +8,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
- 
+
     <!-- Hero Section -->
     <section id="main" class="hero">
-        <label class="switch">
-            <input type="checkbox" id="lang_btn">
-            <span class="slider"><b>EN  ES</b></span>
-        </label>
+
+        <div class="dropdown">
+            <!-- Imagen seleccionada -->
+            <button class="dropdown-btn" onclick="toggleDropdown()">
+                <img id="selectedImg" src="images/es.svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path d="M169.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 306.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+                </svg>
+            </button>
+            <!-- Opciones -->
+            <div class="dropdown-content" id="flags_menu">
+                <div class="option" onclick="selectOption(this)" data-language="es">
+                    <img src="images/es.svg">
+                </div>
+                <div class="option" onclick="selectOption(this)" data-language="en">
+                    <img src="images/gb.svg">
+                </div>
+            </div>
+        </div>
+<!--
+        <div id="flags" class="flags">
+            <div class="flags__item" data-language="es">
+                <img src="images/es.svg" alt="">
+            </div>
+            <div class="flags__item" data-language="en">
+                <img src="images/gb.svg" alt="">
+            </div>
+        </div>
+-->
         <div class="container">
             <div class="hero-content">
-                <img src="images/profile_photo.jpg" alt="Nicolas Sebastian Ledezma" class="profile-photo" data-placeholder="200">
-                <h1>Nicolas Alejandro Sebastian Ledezma</h1>
+                <img src="images/profile_photo.jpg" alt="" class="profile-photo" data-placeholder="200">
+                <h1 data-section="hero" data-value="title"></h1>
             </div>
         </div>
     </section>
@@ -26,32 +51,31 @@
     <!-- About Section -->
     <section id="about" class="about section">
         <div class="container">
-            <h2 id="about_title" class="section-title"></h2>
+            <h2 id="about_title" class="section-title" data-section="about" data-value="title"></h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p id="about_text_1"></p>
-                    <p id="about_text_2"></p>
+                    <p data-section="about" data-value="description"></p>
                 </div>
                 <div class="about-info">
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4 id="about_location"></h4>
-                            <p>Buenos Aires - Argentina</p>
+                            <h4 data-section="about" data-value="location"></h4>
+                            <p data-section="about" data-value="location_val"></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4 id="about_email"></h4>
-                            <p>nicolas.sebastianledezma@gmail.com</p>
+                            <h4 data-section="about" data-value="email"></h4>
+                            <p data-section="about" data-value="email_val"></p>
                         </div>
                     </div>
                     <div class="info-item">
                     <i class="fab fa-linkedin"></i>
                     <div>
-                        <h4 id="about_li"></h4>
-                        <p>nicolas-sebastianledezma</p>
+                        <h4 data-section="about" data-value="li"></h4>
+                        <p data-section="about" data-value="li_val"></p>
                     </div>
                     </div>
                 </div>
@@ -62,30 +86,32 @@
     <!-- Experience Section -->
     <section id="experience" class="experience section">
         <div class="container">
-            <h2 class="section-title" id="experience_title"></h2>
+            <h2 class="section-title" data-section="experience" data-value="title"></h2>
             <div class="timeline">
 
+                <!-- los items se aplican en orden descente -->
+
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 id="experience_item_title_4"></h3>
-                        <p class="company" id="experience_item_company_4"></p>
+                        <h3 data-section="experience" data-value="item_title_4"></h3>
+                        <p class="company" data-section="experience" data-value="item_company_4"></p>
                         <div class="date">
                             <i class="fas fa-calendar"></i>
-                            <p id="experience_item_date_4"></p>
+                            <p data-section="experience" data-value="item_date_4"></p>
                         </div>
                         <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p id="experience_item_location_4"></p>
+                            <p data-section="experience" data-value="item_location_4"></p>
                         </div>
                         <ul>
-                            <li id="experience_item_desc_4_1"></li>
-                            <li id="experience_item_desc_4_2"></li>
-                            <li id="experience_item_desc_4_3"></li>
-                            <li id="experience_item_desc_4_4"></li>
-                            <li id="experience_item_desc_4_5"></li>
-                            <li id="experience_item_desc_4_6"></li>
-                            <li id="experience_item_desc_4_7"></li>
+                            <li data-section="experience" data-value="item_desc_4_1"></li>
+                            <li data-section="experience" data-value="item_desc_4_2"></li>
+                            <li data-section="experience" data-value="item_desc_4_3"></li>
+                            <li data-section="experience" data-value="item_desc_4_4"></li>
+                            <li data-section="experience" data-value="item_desc_4_5"></li>
+                            <li data-section="experience" data-value="item_desc_4_6"></li>
+                            <li data-section="experience" data-value="item_desc_4_7"></li>
                         </ul>
                     </div>
                 </div>
@@ -93,22 +119,22 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 id="experience_item_title_3"></h3>
-                        <p class="company" id="experience_item_company_3"></p>
+                        <h3 data-section="experience" data-value="item_title_3"></h3>
+                        <p class="company" data-section="experience" data-value="item_company_3"></p>
                         <div class="date">
                             <i class="fas fa-calendar"></i>
-                            <p id="experience_item_date_3"></p>
+                            <p data-section="experience" data-value="item_date_3"></p>
                         </div>
                         <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p id="experience_item_location_3"></p>
+                            <p data-section="experience" data-value="item_location_3"></p>
                         </div>
                         <ul>
-                            <li id="experience_item_desc_3_1"></li>
-                            <li id="experience_item_desc_3_2"></li>
-                            <li id="experience_item_desc_3_3"></li>
-                            <li id="experience_item_desc_3_4"></li>
-                            <li id="experience_item_desc_3_5"></li>
+                            <li data-section="experience" data-value="item_desc_3_1"></li>
+                            <li data-section="experience" data-value="item_desc_3_2"></li>
+                            <li data-section="experience" data-value="item_desc_3_3"></li>
+                            <li data-section="experience" data-value="item_desc_3_4"></li>
+                            <li data-section="experience" data-value="item_desc_3_5"></li>
                         </ul>
                     </div>
                 </div>
@@ -116,23 +142,23 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 id="experience_item_title_2"></h3>
-                        <p class="company" id="experience_item_company_2"></p>
+                        <h3 data-section="experience" data-value="item_title_2"></h3>
+                        <p class="company" data-section="experience" data-value="item_company_2"></p>
                         <div class="date">
                             <i class="fas fa-calendar"></i>
-                            <p id="experience_item_date_2"></p>
+                            <p data-section="experience" data-value="item_date_2"></p>
                         </div>
                         <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p id="experience_item_location_2"></p>
+                            <p data-section="experience" data-value="item_location_2"></p>
                         </div>
                         <ul>
-                            <li id="experience_item_desc_2_1"></li>
-                            <li id="experience_item_desc_2_2"></li>
-                            <li id="experience_item_desc_2_3"></li>
-                            <li id="experience_item_desc_2_4"></li>
-                            <li id="experience_item_desc_2_5"></li>
-                            <li id="experience_item_desc_2_6"></li>
+                            <li data-section="experience" data-value="item_desc_2_1"></li>
+                            <li data-section="experience" data-value="item_desc_2_2"></li>
+                            <li data-section="experience" data-value="item_desc_2_3"></li>
+                            <li data-section="experience" data-value="item_desc_2_4"></li>
+                            <li data-section="experience" data-value="item_desc_2_5"></li>
+                            <li data-section="experience" data-value="item_desc_2_6"></li>
                         </ul>
                     </div>
                 </div>
@@ -140,22 +166,22 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3 id="experience_item_title_1"></h3>
-                        <p class="company" id="experience_item_company_1"></p>
+                        <h3 data-section="experience" data-value="item_title_1"></h3>
+                        <p class="company" data-section="experience" data-value="item_company_1"></p>
                         <div class="date">
                             <i class="fas fa-calendar"></i>
-                            <p id="experience_item_date_1"></p>
+                            <p data-section="experience" data-value="item_date_1"></p>
                         </div>
                         <div class="location">
                             <i class="fas fa-map-marker-alt"></i>
-                            <p id="experience_item_location_1"></p>
+                            <p data-section="experience" data-value="item_location_1"></p>
                         </div>
                         <ul>
-                            <li id="experience_item_desc_1_1"></li>
-                            <li id="experience_item_desc_1_2"></li>
-                            <li id="experience_item_desc_1_3"></li>
-                            <li id="experience_item_desc_1_4"></li>
-                            <li id="experience_item_desc_1_5"></li>
+                            <li data-section="experience" data-value="item_desc_1_1"></li>
+                            <li data-section="experience" data-value="item_desc_1_2"></li>
+                            <li data-section="experience" data-value="item_desc_1_3"></li>
+                            <li data-section="experience" data-value="item_desc_1_4"></li>
+                            <li data-section="experience" data-value="item_desc_1_5"></li>
                         </ul>
                     </div>
                 </div>
@@ -173,14 +199,14 @@
                 <div class="skill-category">
                     <h3>
                         <i class="fa-solid fa-cloud"></i>
-                        <p id="skills_subtitle_1"></p>
+                        <p data-section="skills" data-value="subtitle_1"></p>
                     </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
-                                <li>GCP</li>
-                                <li>Azure</li>
-                                <li>AWS</li>
+                                <li data-section="skills" data-value="value_1_1"></li>
+                                <li data-section="skills" data-value="value_1_2"></li>
+                                <li data-section="skills" data-value="value_1_3"></li>
                             </ul>
                         </div>
                     </div>
@@ -189,19 +215,19 @@
                 <div class="skill-category">
                     <h3>
                         <i class="fa-solid fa-database"></i> 
-                        <p id="skills_subtitle_2"></p>
+                        <p data-section="skills" data-value="subtitle_2"></p>
                     </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
-                                <li>SQL Server</li>
-                                <li>Teradata</li>
-                                <li>Informix</li>
-                                <li>MySQL</li>
-                                <li>Azure SQL Server</li>
-                                <li>BigQuery</li>
-                                <li>AWS Athena</li>
-                                <li>PostgreSQL</li>
+                                <li data-section="skills" data-value="value_2_1"></li>
+                                <li data-section="skills" data-value="value_2_2"></li>
+                                <li data-section="skills" data-value="value_2_3"></li>
+                                <li data-section="skills" data-value="value_2_4"></li>
+                                <li data-section="skills" data-value="value_2_5"></li>
+                                <li data-section="skills" data-value="value_2_6"></li>
+                                <li data-section="skills" data-value="value_2_7"></li>
+                                <li data-section="skills" data-value="value_2_8"></li>
                             </ul>
                         </div>
                     </div>
@@ -210,18 +236,18 @@
                 <div class="skill-category">
                     <h3>
                         <i class="fa-solid fa-gears"></i>
-                        <p id="skills_subtitle_3"></p>
+                        <p data-section="skills" data-value="subtitle_3"></p>
                     </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
-                                <li>SSIS</li>
-                                <li>Pentaho</li>
-                                <li>Azure Data Factory</li>
-                                <li>AWS Glue</li>
-                                <li>Google DataFlow</li>
-                                <li>Apache NiFi</li>
-                                <li>Apache Airflow</li>
+                                <li data-section="skills" data-value="value_3_1"></li>
+                                <li data-section="skills" data-value="value_3_2"></li>
+                                <li data-section="skills" data-value="value_3_3"></li>
+                                <li data-section="skills" data-value="value_3_4"></li>
+                                <li data-section="skills" data-value="value_3_5"></li>
+                                <li data-section="skills" data-value="value_3_6"></li>
+                                <li data-section="skills" data-value="value_3_7"></li>
                             </ul>
                         </div>
                     </div>
@@ -230,13 +256,13 @@
                 <div class="skill-category">
                     <h3>
                         <i class="fa-solid fa-chart-column"></i>
-                        <p id="skills_subtitle_4"></p>
+                        <p data-section="skills" data-value="subtitle_4"></p>
                     </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
-                                <li>MicroStrategy</li>
-                                <li>PowerBI</li>
+                                <li data-section="skills" data-value="value_4_1"></li>
+                                <li data-section="skills" data-value="value_4_2"></li>
                             </ul>
                         </div>
                     </div>
@@ -245,13 +271,13 @@
                 <div class="skill-category">
                     <h3>
                         <i class="fa-solid fa-code"></i>
-                        <p id="skills_subtitle_5"></p>
+                        <p data-section="skills" data-value="subtitle_5"></p>
                     </h3>
                     <div class="skill-item">
                         <div class="skill-header">
                             <ul>
-                                <li>SQL</li>
-                                <li>Python</li>
+                                <li data-section="skills" data-value="value_5_1"></li>
+                                <li data-section="skills" data-value="value_5_2"></li>
                             </ul>
                         </div>
                     </div>
@@ -264,31 +290,31 @@
     <!-- Education Section -->
     <section class="education section">
         <div class="container">
-            <h2 class="section-title" id="education_title"></h2>
+            <h2 class="section-title" data-section="education" data-value="title"></h2>
             <div class="education-grid">
                 
                 <div class="education-card">
                     <div class="education-header">
-                        <h3 id="education_h3_1"></h3>
-                        <p class="institution" id="education_institution_1"></p>
+                        <h3 data-section="education" data-value="subtitle_1"></h3>
+                        <p class="institution" data-section="education" data-value="institution_1"></p>
                     </div>
                     <div class="date">
                         <i class="fas fa-calendar"></i>
-                        <p id="education_date_1"></p>
+                        <p data-section="education" data-value="date_1"></p>
                     </div>
                     <div class="location">
                         <i class="fas fa-map-marker-alt"></i>
-                        <p id="education_location_1"></p>
+                        <p data-section="education" data-value="location_1"></p>
                     </div>
                 </div>
 
                 <div class="education-card">
                     <div class="education-header">
-                        <h3 id="education_h3_2"></h3>
+                        <h3 data-section="education" data-value="subtitle_2"></h3>
                     </div>
                     <ul class="certification-list">
-                        <li id="education_item_2_1"></li>
-                        <li id="education_item_2_2"></li>
+                        <li data-section="education" data-value="item_2_1"></li>
+                        <li data-section="education" data-value="item_2_2"></li>
                     </ul>
                 </div>
 
@@ -300,12 +326,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-desc">
-                <p id="footer_text"></p>
+                <p data-section="footer" data-value="text"></p>
             </div>
             <div class="footer-links">
-                <a href="#main">
-                    <b id="footer_button"></b>
-                </a>
+                <a href="#main" data-section="footer" data-value="button"></a>
             </div>
         </div>
     </footer>

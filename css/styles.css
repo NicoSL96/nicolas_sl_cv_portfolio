@@ -12,7 +12,7 @@
     --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.15);
     --transition: all 0.3s ease;
 }
- 
+
 * {
     margin: 0;
     padding: 0;
@@ -37,53 +37,94 @@ body {
     padding: 0 20px;
 }
 
+/* ========================dropdown test ==================== */
 
-/* ============== CSS: Estilos para el slider ================== */
-.switch {
+.dropdown {
     position: absolute;
-    display: flex;
-    right: 5px;
-    top: 5px;
-    width: 52px;
-    height: 25px;
+    top: 10px;
+    right: 10px;
+    width: 70px;
+    justify-items: center;
 }
 
-.switch input { /* Oculta el checkbox real */
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
+/* BOTÓN */
+.dropdown-btn {
+    width: 70px;
+    height: 40px;
+    border: 1px solid #cccccccc;
     cursor: pointer;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-color: #cccccc;
-    transition: .4s;
-    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
-.slider:before {
+.dropdown-btn img {
+    width: 30px;
+}
+
+.dropdown-btn svg {
+    width: 16px;
+}
+
+
+/* MENÚ */
+.dropdown-content {
     position: absolute;
-    content: "";
-    height: 25px;
-    width: 25px;
-    left: 0px;
-    bottom: 0%;
-    background-color: rgb(255, 255, 255);
-    transition: .4s;
-    background-image: url('../images/language-solid.svg');
+    top: 40px;
+    width: 70px;
+    background: white;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    justify-items: center;
+    transform: translateY(-10px);
+    transition:
+        height 0.3s ease,
+        opacity 0.25s ease,
+        transform 0.25s ease;
 }
 
-/* Cambios al estar seleccionado (checked) */
-input:checked + .slider {
-    background-color: #2196F3;
+/* estado abierto */
+.dropdown-content.open {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-input:checked + .slider:before {
-    transform: translateX(28px);
+/* OPCIONES */
+.option {
+    width: 70px;
+    cursor: pointer;
+    position: relative;
 }
 
+.option img {
+    width: 50px;
+    padding-top: 6px;
+}
+
+/* hover */
+.option:hover {
+    background-color: #4CAF50;
+}
+
+/* ✅ MARCA DE SELECCIÓN
+.option.selected::after {
+    content: "✓";
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    background: #4CAF50;
+    color: white;
+    font-size: 14px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
 
 /* ==================== Hero Section ==================== */
 .hero {
@@ -92,6 +133,27 @@ input:checked + .slider:before {
     padding: 40px 20px;
     text-align: center;
 }
+
+/*
+.flags {
+    width: 75px;
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flags__item {
+    width: 30px;
+}
+
+.flags__item img {
+    display: block;
+    cursor: pointer;
+}
+*/
 
 .hero-content {
     display: flex;
